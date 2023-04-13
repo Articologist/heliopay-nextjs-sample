@@ -10,7 +10,7 @@ const Header = () => {
 </a>
         </Link>
         <div className={styles.nav}>
-          <Link href="/">
+          <Link href="https://www.audi0file.com">
             <a className={styles.navItem}>Home</a>
           </Link>
           <Link href="/">
