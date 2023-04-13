@@ -138,10 +138,9 @@ const Home: NextPage = () => {
 
         <div className={styles.hero}>
           <div className={styles.heroContainer}>
-            <div className={styles.heroTitle}>Your coffee order</div>
-            <div className={styles.heroText}>Speciality 80+ arabica single origin coffee beans. Characterised by zesty
-              acidity and heavy body, with slightly herbal, chocolate, citric undertones.
-              All coffee is roasted daily and fresh!
+            <div className={styles.heroTitle}>Featured</div>
+            <div className={styles.heroText}>Under the Basmala banner, HA's Control Room album is Post-Modern Hip-Hop, JazzHop, Beats and Jazztronica. Culminated by instrumental hip-hop or beat art.
+
             </div>
             <div className={styles.product}>
               <div className={styles.productLeft}>
