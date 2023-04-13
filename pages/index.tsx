@@ -162,11 +162,16 @@ const Home: NextPage = () => {
                      
                         Control Room (KING Coin - buyout collection)
                       </select>
-                    
+                                          <br />
+                      <br />
+                    </>}
+                  </>
+                )}
+
                 <div className={styles.paybutton}>
                   <HelioPay
                     cluster={cluster}
-                    payButtonTitle="Purchase"
+                    payButtonTitle="Buy Coffee"
                     paymentRequestId={paymentRequestId}
                     onSuccess={function (event): void {
                       console.log("onSuccess", event);
@@ -197,7 +202,7 @@ const Home: NextPage = () => {
                   </div>
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <image
+                <img
                   src="https://www.scoop.orng.store/ws/media-library/5015dcb987b94eb98b025d1006215cc5/cr_vinyl_mock.png"
                   alt="TheGreatProduct"
                   className={styles.productImage}
