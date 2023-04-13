@@ -170,22 +170,22 @@ const Home: NextPage = () => {
                       >
                         Control Room (KING Coin - buyout collection)
                       </option>
-                      // <option
-                          value="643845e234ddef95bad6abbe"
-                          data-payment-type={PaymentRequestType.PAYLINK}
-                          data-cluster={ClusterType.Devnet}
+                      <option
+                           // value="643845e234ddef95bad6abbe"
+                           // data-payment-type={PaymentRequestType.PAYLINK}
+                           // data-cluster={ClusterType.Devnet}
                       >
                         Coffee order (devnet Pay Link)
-                      </option> //
+                      </option>
                       <option
-                          value="641305a1b3953f52a45fc68a"
+                          value="643845e234ddef95bad6abbe"
                           data-payment-type={PaymentRequestType.PAYSTREAM}
                           data-cluster={ClusterType.Mainnet}
                       >
                         Coffee order (mainnet Pay Stream)
                       </option>
                       <option
-                          value="64130521bcb19399cb11af57"
+                          value="643845e234ddef95bad6abbe"
                           data-payment-type={PaymentRequestType.PAYSTREAM}
                           data-cluster={ClusterType.Devnet}
                       >
