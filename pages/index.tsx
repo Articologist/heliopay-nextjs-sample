@@ -269,7 +269,7 @@ const Home: NextPage = () => {
                 <div className={styles.paybutton}>
                   <HelioPay
                     cluster={cluster}
-                    payButtonTitle="Buy Coffee"
+                    payButtonTitle="Purchase"
                     paymentRequestId={paymentRequestId}
                     onSuccess={function (event): void {
                       console.log("onSuccess", event);
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={paymentRequest?.dynamic ? 0.01 : undefined}
+                    totalAmount={paymentRequest?.dynamic ? 3600 : undefined}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
