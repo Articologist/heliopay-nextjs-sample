@@ -135,15 +135,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Header />
-      <main className={styles.main}>
-        <Header />
 
         <div className={styles.hero}>
           <div className={styles.heroContainer}>
-            <div className={styles.heroTitle}>Your coffee order</div>
-            <div className={styles.heroText}>Speciality 80+ arabica single origin coffee beans. Characterised by zesty
-              acidity and heavy body, with slightly herbal, chocolate, citric undertones.
-              All coffee is roasted daily and fresh!
+            <div className={styles.heroTitle}>Featured Product</div>
+            <div className={styles.heroText}>Under the Basmala banner, HA's Control Room album is Post-Modern Hip-Hop, JazzHop, Beats and Jazztronica. Culminated by instrumental hip-hop or beat art.
             </div>
             <div className={styles.product}>
               <div className={styles.productLeft}>
@@ -171,10 +167,10 @@ const Home: NextPage = () => {
                           data-payment-type={PaymentRequestType.PAYLINK}
                           data-cluster={ClusterType.Mainnet}
                       >
-                        Coffee order (mainnet Pay Link)
+                        Control Room (KING Coin - buyout collection)
                       </option>
                       <option
-                          value="63c552ac5cff95b55ea5fcfc"
+                          value="643845e234ddef95bad6abbe"
                           data-payment-type={PaymentRequestType.PAYLINK}
                           data-cluster={ClusterType.Devnet}
                       >
@@ -288,7 +284,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={paymentRequest?.dynamic ? 0.01 : undefined}
+                    totalAmount={3600}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
@@ -302,7 +298,7 @@ const Home: NextPage = () => {
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://www.ambercay.com.tr/cropped/?src=dosyalar/page_77/img_11616842956.png&w=553&h=600"
+                  src="https://www.scoop.orng.store/ws/media-library/5015dcb987b94eb98b025d1006215cc5/cr_vinyl_mock.png"
                   alt="TheGreatProduct"
                   className={styles.productImage}
                 />
