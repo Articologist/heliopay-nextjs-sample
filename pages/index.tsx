@@ -194,9 +194,10 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
+                  />
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="https://www.scoop.orng.store/ws/media-library/5015dcb987b94eb98b025d1006215cc5/cr_vinyl_mock.png"
                   alt="TheGreatProduct"
                   className={styles.productImage}
