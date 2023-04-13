@@ -138,7 +138,7 @@ const Home: NextPage = () => {
 
         <div className={styles.hero}>
           <div className={styles.heroContainer}>
-            <div className={styles.heroTitle}>Featured</div>
+            <div className={styles.heroTitle}>Control Room by Basmala</div>
             <div className={styles.heroText}>Under the Basmala banner, HA releases Control Room. A album thats Post-Modern Hip-Hop, JazzHop, Beats and Jazztronica. Culminated by instrumental hip-hop or beat art.
 
             </div>
