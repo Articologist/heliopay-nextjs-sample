@@ -159,6 +159,10 @@ const Home: NextPage = () => {
                         setPaymentType(e.target[e.target.selectedIndex].getAttribute('data-payment-type') as PaymentRequestType);
                       }}
                     >
+                     
+                        Control Room (KING Coin - buyout collection)
+                      </select>
+                    
                 <div className={styles.paybutton}>
                   <HelioPay
                     cluster={cluster}
