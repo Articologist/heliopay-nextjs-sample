@@ -169,7 +169,34 @@ const Home: NextPage = () => {
                       >
                         Control Room (KING Coin - buyout collection)
                       </option>
-                      
+                      <option
+                          value="63c552ac5cff95b55ea5fcfc"
+                          data-payment-type={PaymentRequestType.PAYLINK}
+                          data-cluster={ClusterType.Devnet}
+                      >
+                        Coffee order (devnet Pay Link)
+                      </option>
+                      <option
+                          value="641305a1b3953f52a45fc68a"
+                          data-payment-type={PaymentRequestType.PAYSTREAM}
+                          data-cluster={ClusterType.Mainnet}
+                      >
+                        Coffee order (mainnet Pay Stream)
+                      </option>
+                      <option
+                          value="64130521bcb19399cb11af57"
+                          data-payment-type={PaymentRequestType.PAYSTREAM}
+                          data-cluster={ClusterType.Devnet}
+                      >
+                        Coffee order (devnet Pay Stream)
+                      </option>
+                      <option
+                          value={''}
+                          data-payment-type={PaymentRequestType.PAYLINK}
+                          data-cluster={ClusterType.Mainnet}
+                      >
+                        Custom
+                      </option>
                     </select>
                     {isShownCustom && <>
                       <div className={styles.productTitle} data-tooltip={'Log in to hel.io and create a Pay Link or ' +
