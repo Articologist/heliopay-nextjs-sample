@@ -159,9 +159,7 @@ const Home: NextPage = () => {
                         setPaymentType(e.target[e.target.selectedIndex].getAttribute('data-payment-type') as PaymentRequestType);
                       }}
                     >
-                      <option value="" disabled>
-                        Select one...
-                      </option>
+
                       <option
                           value={defaultPaymentRequestId}
                           data-payment-type={PaymentRequestType.PAYLINK}
@@ -169,99 +167,7 @@ const Home: NextPage = () => {
                       >
                         Control Room (KING Coin - buyout collection)
                       </option>
-                      <option
-                          value="63c552ac5cff95b55ea5fcfc"
-                          data-payment-type={PaymentRequestType.PAYLINK}
-                          data-cluster={ClusterType.Devnet}
-                      >
-                        Coffee order (devnet Pay Link)
-                      </option>
-                      <option
-                          value="641305a1b3953f52a45fc68a"
-                          data-payment-type={PaymentRequestType.PAYSTREAM}
-                          data-cluster={ClusterType.Mainnet}
-                      >
-                        Coffee order (mainnet Pay Stream)
-                      </option>
-                      <option
-                          value="64130521bcb19399cb11af57"
-                          data-payment-type={PaymentRequestType.PAYSTREAM}
-                          data-cluster={ClusterType.Devnet}
-                      >
-                        Coffee order (devnet Pay Stream)
-                      </option>
-                      <option
-                          value={''}
-                          data-payment-type={PaymentRequestType.PAYLINK}
-                          data-cluster={ClusterType.Mainnet}
-                      >
-                        Custom
-                      </option>
-                    </select>
-                    {isShownCustom && <>
-                      <div className={styles.productTitle} data-tooltip={'Log in to hel.io and create a Pay Link or ' +
-                          '"Dynamic payment". Copy paste the paymentRequestId  from Step 4: Integrate Helio'}>
-                        Paste you payment ID here to test your checkout
-                      </div>
-                      <input
-                          type="text"
-                          value={paymentRequestId}
-                          onChange={(e) => setPaymentRequestId(e.target.value)}
-                      />
-                      <br />
-                      <br />
-                      <div>
-                        <label>
-                          <input
-                              type="radio"
-                              name="cluster"
-                              value={ClusterType.Mainnet}
-                              checked={cluster === ClusterType.Mainnet}
-                              onChange={() => setCluster(ClusterType.Mainnet)}
-                          />
-                          &nbsp; mainnet-beta
-                        </label>
-                        &nbsp;&nbsp;&nbsp;
-                        <label>
-                          <input
-                              type="radio"
-                              name="cluster"
-                              value={ClusterType.Devnet}
-                              checked={cluster === ClusterType.Devnet}
-                              onChange={() => setCluster(ClusterType.Devnet)}
-                          />
-                          &nbsp; devnet
-                        </label>
-                      </div>
-                      <br />
-                      <br />
-                      <div>
-                        <label title={'1-time payment'}>
-                          <input
-                              type="radio"
-                              name="requestType"
-                              value={PaymentRequestType.PAYLINK}
-                              checked={paymentType === PaymentRequestType.PAYLINK}
-                              onChange={() => setPaymentType(PaymentRequestType.PAYLINK)}
-                          />
-                          &nbsp; Pay Link
-                        </label>
-                        &nbsp;&nbsp;&nbsp;
-                        <label title={'Recurring payment'}>
-                          <input
-                              type="radio"
-                              name="requestType"
-                              value={PaymentRequestType.PAYSTREAM}
-                              checked={paymentType === PaymentRequestType.PAYSTREAM}
-                              onChange={() => setPaymentType(PaymentRequestType.PAYSTREAM)}
-                          />
-                          &nbsp; Pay Stream
-                        </label>
-                      </div>
-                      <br />
-                      <br />
-                    </>}
-                  </>
+                      
                 )}
 
                 <div className={styles.paybutton}>
