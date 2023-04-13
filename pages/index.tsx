@@ -286,7 +286,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={paymentRequest?.dynamic ? 3600 : undefined}
+                    totalAmount={paymentRequest?.dynamic}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
@@ -300,7 +300,7 @@ const Home: NextPage = () => {
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://www.ambercay.com.tr/cropped/?src=dosyalar/page_77/img_11616842956.png&w=553&h=600"
+                  src="https://www.scoop.orng.store/ws/media-library/5015dcb987b94eb98b025d1006215cc5/cr_vinyl_mock.png"
                   alt="TheGreatProduct"
                   className={styles.productImage}
                 />
