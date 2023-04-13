@@ -146,9 +146,7 @@ const Home: NextPage = () => {
               <div className={styles.productLeft}>
                 {!isSuccess && (
                   <>
-                    <div className={styles.productTitle}>
-                      Choose an example
-                    </div>
+            
 
                     <select
                       className={styles.productSelect}
@@ -160,9 +158,7 @@ const Home: NextPage = () => {
                         setPaymentType(e.target[e.target.selectedIndex].getAttribute('data-payment-type') as PaymentRequestType);
                       }}
                     >
-                      <option value="" disabled>
-                        Select one...
-                      </option>
+            
                       <option
                           value={defaultPaymentRequestId}
                           data-payment-type={PaymentRequestType.PAYLINK}
