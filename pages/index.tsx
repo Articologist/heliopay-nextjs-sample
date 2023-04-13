@@ -5,7 +5,7 @@ import styles from "../styles/main.module.scss";
 import { HelioPay } from "@heliofi/react";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
-import Header from "../src/components/Heade";
+//* import Header from "../src/components/Header"; *//
 import { useEffect, useMemo, useState } from "react";
 import { Cluster } from "@solana/web3.js";
 import { HelioSDK, ClusterType } from "@heliofi/sdk";
