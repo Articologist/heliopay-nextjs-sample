@@ -135,18 +135,22 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Header />
+      <main className={styles.main}>
+        <Header />
 
         <div className={styles.hero}>
           <div className={styles.heroContainer}>
-            <div className={styles.heroTitle}>Featured Product</div>
-            <div className={styles.heroText}>Under the Basmala banner, HA's Control Room album is Post-Modern Hip-Hop, JazzHop, Beats and Jazztronica. Culminated by instrumental hip-hop or beat art.
+            <div className={styles.heroTitle}>Your coffee order</div>
+            <div className={styles.heroText}>Speciality 80+ arabica single origin coffee beans. Characterised by zesty
+              acidity and heavy body, with slightly herbal, chocolate, citric undertones.
+              All coffee is roasted daily and fresh!
             </div>
             <div className={styles.product}>
               <div className={styles.productLeft}>
                 {!isSuccess && (
                   <>
                     <div className={styles.productTitle}>
-                      Purchase NFT w/ Tandem Goods
+                      Choose an example
                     </div>
 
                     <select
@@ -159,10 +163,106 @@ const Home: NextPage = () => {
                         setPaymentType(e.target[e.target.selectedIndex].getAttribute('data-payment-type') as PaymentRequestType);
                       }}
                     >
-                     
-                        Control Room (KING Coin - buyout collection)
-                      </select>
-                                          <br />
+                      <option value="" disabled>
+                        Select one...
+                      </option>
+                      <option
+                          value={defaultPaymentRequestId}
+                          data-payment-type={PaymentRequestType.PAYLINK}
+                          data-cluster={ClusterType.Mainnet}
+                      >
+                        Coffee order (mainnet Pay Link)
+                      </option>
+                      <option
+                          value="63c552ac5cff95b55ea5fcfc"
+                          data-payment-type={PaymentRequestType.PAYLINK}
+                          data-cluster={ClusterType.Devnet}
+                      >
+                        Coffee order (devnet Pay Link)
+                      </option>
+                      <option
+                          value="641305a1b3953f52a45fc68a"
+                          data-payment-type={PaymentRequestType.PAYSTREAM}
+                          data-cluster={ClusterType.Mainnet}
+                      >
+                        Coffee order (mainnet Pay Stream)
+                      </option>
+                      <option
+                          value="64130521bcb19399cb11af57"
+                          data-payment-type={PaymentRequestType.PAYSTREAM}
+                          data-cluster={ClusterType.Devnet}
+                      >
+                        Coffee order (devnet Pay Stream)
+                      </option>
+                      <option
+                          value={''}
+                          data-payment-type={PaymentRequestType.PAYLINK}
+                          data-cluster={ClusterType.Mainnet}
+                      >
+                        Custom
+                      </option>
+                    </select>
+                    {isShownCustom && <>
+                      <div className={styles.productTitle} data-tooltip={'Log in to hel.io and create a Pay Link or ' +
+                          '"Dynamic payment". Copy paste the paymentRequestId  from Step 4: Integrate Helio'}>
+                        Paste you payment ID here to test your checkout
+                      </div>
+                      <input
+                          type="text"
+                          value={paymentRequestId}
+                          onChange={(e) => setPaymentRequestId(e.target.value)}
+                      />
+                      <br />
+                      <br />
+                      <div>
+                        <label>
+                          <input
+                              type="radio"
+                              name="cluster"
+                              value={ClusterType.Mainnet}
+                              checked={cluster === ClusterType.Mainnet}
+                              onChange={() => setCluster(ClusterType.Mainnet)}
+                          />
+                          &nbsp; mainnet-beta
+                        </label>
+                        &nbsp;&nbsp;&nbsp;
+                        <label>
+                          <input
+                              type="radio"
+                              name="cluster"
+                              value={ClusterType.Devnet}
+                              checked={cluster === ClusterType.Devnet}
+                              onChange={() => setCluster(ClusterType.Devnet)}
+                          />
+                          &nbsp; devnet
+                        </label>
+                      </div>
+                      <br />
+                      <br />
+                      <div>
+                        <label title={'1-time payment'}>
+                          <input
+                              type="radio"
+                              name="requestType"
+                              value={PaymentRequestType.PAYLINK}
+                              checked={paymentType === PaymentRequestType.PAYLINK}
+                              onChange={() => setPaymentType(PaymentRequestType.PAYLINK)}
+                          />
+                          &nbsp; Pay Link
+                        </label>
+                        &nbsp;&nbsp;&nbsp;
+                        <label title={'Recurring payment'}>
+                          <input
+                              type="radio"
+                              name="requestType"
+                              value={PaymentRequestType.PAYSTREAM}
+                              checked={paymentType === PaymentRequestType.PAYSTREAM}
+                              onChange={() => setPaymentType(PaymentRequestType.PAYSTREAM)}
+                          />
+                          &nbsp; Pay Stream
+                        </label>
+                      </div>
+                      <br />
                       <br />
                     </>}
                   </>
@@ -188,7 +288,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={3600}
+                    totalAmount={paymentRequest?.dynamic ? 0.01 : undefined}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
@@ -199,11 +299,10 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-                  </div>
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://www.scoop.orng.store/ws/media-library/5015dcb987b94eb98b025d1006215cc5/cr_vinyl_mock.png"
+                  src="https://www.ambercay.com.tr/cropped/?src=dosyalar/page_77/img_11616842956.png&w=553&h=600"
                   alt="TheGreatProduct"
                   className={styles.productImage}
                 />
