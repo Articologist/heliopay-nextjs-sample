@@ -160,6 +160,14 @@ const Home: NextPage = () => {
                       }}
                     >
 
+                      <option
+                          value={defaultPaymentRequestId}
+                          data-payment-type={PaymentRequestType.PAYLINK}
+                          data-cluster={ClusterType.Mainnet}
+                      >
+                        Control Room (KING Coin - buyout collection)
+                      </option>
+   
 
                 <div className={styles.paybutton}>
                   <HelioPay
