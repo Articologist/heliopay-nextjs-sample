@@ -179,14 +179,14 @@ const Home: NextPage = () => {
                         Coffee order (devnet Pay Link)
                       </option>
                       <option
-                          value="641305a1b3953f52a45fc68a"
+                          value="643845e234ddef95bad6abbe"
                           data-payment-type={PaymentRequestType.PAYSTREAM}
                           data-cluster={ClusterType.Mainnet}
                       >
                         Coffee order (mainnet Pay Stream)
                       </option>
                       <option
-                          value="64130521bcb19399cb11af57"
+                          value="643845e234ddef95bad6abbe"
                           data-payment-type={PaymentRequestType.PAYSTREAM}
                           data-cluster={ClusterType.Devnet}
                       >
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={paymentRequest?.dynamic}
+                    totalAmount={dynamic}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
