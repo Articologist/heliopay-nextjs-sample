@@ -126,8 +126,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Helio Embed Sample App</title>
-        <meta name="description" content="Helio Embed Sample App" />
+        <title>Audi0FILE Wallet-To-Wallet</title>
+        <meta name="description" content="audioFILE Crypto-Checkout" />
         {favicons.map((linkProps) => (
           <link key={linkProps.href} {...linkProps} />
         ))}
