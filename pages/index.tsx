@@ -138,17 +138,15 @@ const Home: NextPage = () => {
 
         <div className={styles.hero}>
           <div className={styles.heroContainer}>
-            <div className={styles.heroTitle}>Your coffee order</div>
-            <div className={styles.heroText}>Speciality 80+ arabica single origin coffee beans. Characterised by zesty
-              acidity and heavy body, with slightly herbal, chocolate, citric undertones.
-              All coffee is roasted daily and fresh!
+            <div className={styles.heroTitle}>Featured Product</div>
+            <div className={styles.heroText}>Under the Basmala banner, HA's Control Room album is Post-Modern Hip-Hop, JazzHop, Beats and Jazztronica. Culminated by instrumental hip-hop or beat art.
             </div>
             <div className={styles.product}>
               <div className={styles.productLeft}>
                 {!isSuccess && (
                   <>
                     <div className={styles.productTitle}>
-                      Choose an example
+                      Purchase NFT w/ Tandem Goods
                     </div>
 
                     <select
@@ -171,7 +169,7 @@ const Home: NextPage = () => {
                       >
                         Control Room (KING Coin - buyout collection)
                       </option>
-                      <option
+                      <!-- <option
                           value="643845e234ddef95bad6abbe"
                           data-payment-type={PaymentRequestType.PAYLINK}
                           data-cluster={ClusterType.Devnet}
@@ -198,7 +196,7 @@ const Home: NextPage = () => {
                           data-cluster={ClusterType.Mainnet}
                       >
                         Custom
-                      </option>
+                      </option> -->
                     </select>
                     {isShownCustom && <>
                       <div className={styles.productTitle} data-tooltip={'Log in to hel.io and create a Pay Link or ' +
