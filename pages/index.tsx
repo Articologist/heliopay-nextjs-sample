@@ -99,7 +99,7 @@ const favicons: Array<Favicon> = [
 ];
 
 const Home: NextPage = () => {
-  const defaultPaymentRequestId = '63c5b1a765f452f94a1e5ade';
+  const defaultPaymentRequestId = '643845e234ddef95bad6abbe';
   const [paymentRequestId, setPaymentRequestId] = useState<string>(defaultPaymentRequestId);
   const [cluster, setCluster] = useState<Cluster>(ClusterType.Mainnet);
   const [paymentType, setPaymentType] = useState<PaymentRequestType>(PaymentRequestType.PAYLINK);
@@ -286,7 +286,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={dynamic}
+                    totalAmount={3600}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
