@@ -254,7 +254,7 @@ const Home: NextPage = () => {
                       console.log("onStartPayment");
                     }}
                     supportedCurrencies={['USDC']}
-                    totalAmount={3600}
+                    totalAmount={1199}
                     paymentType={paymentType}
                     // theme={{
                     //     colors: {
