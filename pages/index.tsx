@@ -138,8 +138,8 @@ const Home: NextPage = () => {
 
         <div className={styles.hero}>
           <div className={styles.heroContainer}>
-            <div className={styles.heroTitle}>Control Room by Basmala</div>
-            <div className={styles.heroText}>Under the Basmala banner, HA releases Control Room. A album thats Post-Modern Hip-Hop, JazzHop, Beats and Jazztronica. Culminated by instrumental hip-hop or beat art.
+            <div className={styles.heroTitle}>1 MOR by HA</div>
+            <div className={styles.heroText}>Original Hādin (HA) artwork. Polygon ERC-721 authenticated NFT. Privately Air-dropped to your wallet post purchase. Original file and 12x12 wallart included.
 
             </div>
             <div className={styles.product}>
@@ -164,7 +164,7 @@ const Home: NextPage = () => {
                           data-payment-type={PaymentRequestType.PAYLINK}
                           data-cluster={ClusterType.Mainnet}
                       >
-                        Control Room (KING Coin - buyout collection)
+                        1 MOR (Wallart)
                       </option>
                       
                     </select>
@@ -268,7 +268,7 @@ const Home: NextPage = () => {
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://www.scoop.orng.store/ws/media-library/5015dcb987b94eb98b025d1006215cc5/cr_vinyl_mock.png"
+                  src="https://sync.audi0file.com/?r=/download&path=LzIxRkgvY2FudmFzLShpbiktMTJ4MTItZnJvbnQtNjRkYTc5ODBkZGM3Yi5wbmc%3D"
                   alt="TheGreatProduct"
                   className={styles.productImage}
                 />
