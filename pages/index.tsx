@@ -268,7 +268,7 @@ const Home: NextPage = () => {
               <div className={styles.productRight}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://sync.audi0file.com/?r=/download&path=LzIxRkgvY2FudmFzLShpbiktMTJ4MTItZnJvbnQtNjRkYTc5ODBkZGM3Yi5wbmc%3D"
+                  src="ipfs://bafybeifdadzfdb55wglyhun3fzlir7nt7dcfbeer4f6y5sesv5ptzurn64"
                   alt="TheGreatProduct"
                   className={styles.productImage}
                 />
